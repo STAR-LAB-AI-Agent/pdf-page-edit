@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+.venv-nanobot/
+.venv-pdf/
+runtime/
+.nanobot-local/
+pdf-work/
+venv/
+logs/*.log
+!logs/.gitkeep
+!logs/example.log
+.agent_pending/
+tmp/
+output/
+tests/fixtures/*.pdf
+!tests/fixtures/.gitkeep

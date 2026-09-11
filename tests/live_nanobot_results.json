@@ -1,0 +1,55 @@
+{
+  "date": "2026-09-11T11:36:43.342588",
+  "backend": "Nanobot 0.3.0 AgentLoop + Ollama qwen3:4b",
+  "mocked": false,
+  "cases": [
+    {
+      "case": "提取",
+      "passed": true,
+      "seconds": 75.56,
+      "request": "请将1.pdf第2到3页提取出来，输出为extract.pdf",
+      "preview": "即将从1.pdf提取第2-3页，输出为extract.pdf；不会覆盖输入文件。\n请回复“确认”或“取消”；修改需求会使旧预览失效。",
+      "result": "成功提取页面：2,3\n文件：C:\\Users\\16703\\AppData\\Local\\Temp\\tmpzv118ev4\\extract.pdf\n输出共2页。后续说“它”指这个结果文件。"
+    },
+    {
+      "case": "旋转",
+      "passed": true,
+      "seconds": 49.5,
+      "request": "将1.pdf第2页顺时针旋转90度，输出为rotate.pdf",
+      "preview": "即将将1.pdf第2页旋转90度，输出为rotate.pdf；不会覆盖输入文件。\n请回复“确认”或“取消”；修改需求会使旧预览失效。",
+      "result": "成功将页面2旋转90度\n文件：C:\\Users\\16703\\AppData\\Local\\Temp\\tmpzv118ev4\\rotate.pdf\n输出共3页。后续说“它”指这个结果文件。"
+    },
+    {
+      "case": "合并",
+      "passed": true,
+      "seconds": 53.69,
+      "request": "合并1.pdf和2.pdf的全部页面，输出为merge.pdf",
+      "preview": "即将合并1.pdf（页码：all）、2.pdf（页码：all），输出为merge.pdf；不会覆盖输入文件。\n请回复“确认”或“取消”；修改需求会使旧预览失效。",
+      "result": "成功合并2个PDF文件\n文件：C:\\Users\\16703\\AppData\\Local\\Temp\\tmpzv118ev4\\merge.pdf\n输出共5页。后续说“它”指这个结果文件。"
+    },
+    {
+      "case": "删除",
+      "passed": true,
+      "seconds": 46.78,
+      "request": "删除1.pdf第1页，输出为delete.pdf",
+      "preview": "即将从1.pdf删除第1页，输出为delete.pdf；不会覆盖输入文件。\n请回复“确认”或“取消”；修改需求会使旧预览失效。",
+      "result": "成功删除页面：1\n文件：C:\\Users\\16703\\AppData\\Local\\Temp\\tmpzv118ev4\\delete.pdf\n输出共2页。后续说“它”指这个结果文件。"
+    },
+    {
+      "case": "倒序",
+      "passed": false,
+      "seconds": 60.25,
+      "request": "将1.pdf全部页面倒序，输出为reverse.pdf",
+      "preview": "I completed the tool steps but couldn't produce a final answer. Please try again or narrow the task.",
+      "result": "NO_PLAN"
+    },
+    {
+      "case": "裁剪",
+      "passed": true,
+      "seconds": 52.11,
+      "request": "将1.pdf第2页四边各裁掉10点，输出为crop.pdf",
+      "preview": "即将裁剪1.pdf第2页，左/下/右/上边距为[10, 10, 10, 10]点（仅改变可见区域），输出为crop.pdf；不会覆盖输入文件。\n请回复“确认”或“取消”；修改需求会使旧预览失效。",
+      "result": "成功裁剪指定页的可见区域（不永久删除隐藏内容）\n文件：C:\\Users\\16703\\AppData\\Local\\Temp\\tmpzv118ev4\\crop.pdf\n输出共3页。后续说“它”指这个结果文件。"
+    }
+  ]
+}

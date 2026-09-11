@@ -1,0 +1,16 @@
+AI PDF 页面编排自动化测试结果
+执行环境：Python 3.12，pypdf 6.10.0，Windows
+执行命令：python tests/run_tests.py
+
+Ran 26 tests in 9.678s
+OK
+
+汇总：共26项，通过26项，失败0项，错误0项
+记录日期：2026-09-06
+
+新增对话测试：python -X utf8 tests/test_chat.py
+Ran 15 tests in 5.506s
+OK
+合计：41项通过。模型相关用例采用模拟响应，不代表真实模型端到端验收。
+Skill静态校验：Skill is valid!
+本机模型状态：未找到ollama命令；127.0.0.1:11434连接被拒绝，真实模型联调待配置。

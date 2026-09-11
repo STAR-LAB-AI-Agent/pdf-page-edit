@@ -1,0 +1,13 @@
+{
+  "agents": {"defaults": {
+    "workspace": ".nanobot-local/workspace",
+    "model": "qwen3:4b", "provider": "ollama",
+    "maxTokens": 1024, "contextWindowTokens": 8192,
+    "maxToolIterations": 2, "maxToolResultChars": 2000,
+    "temperature": 0, "reasoningEffort": "none",
+    "dream": {"enabled": false}
+  }},
+  "providers": {"ollama": {"apiBase": "http://127.0.0.1:11434/v1", "apiKey": "ollama-local", "extraBody": {"think": false}}},
+  "tools": {"restrictToWorkspace": true, "exec": {"enable": false}, "file": {"enable": false}},
+  "channels": {"showReasoning": false}
+}

@@ -1,0 +1,2 @@
+# Separate environment: nanobot-ai requires pypdf<6; PDF CLI uses requirements.txt.
+nanobot-ai==0.3.0

@@ -1,0 +1,2 @@
+{"timestamp":"2026-09-03T02:30:00+00:00","operation":"extract","input_files":["report.pdf"],"output_file":"report_extract.pdf","status":"success"}
+{"timestamp":"2026-09-03T02:31:00+00:00","operation":"rotate","input_files":["demo.pdf"],"output_file":null,"status":"error","error_code":"PAGE_OUT_OF_RANGE"}
